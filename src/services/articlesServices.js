@@ -1,6 +1,6 @@
 import useAxios from "axios-hooks"
 
-const apiKey = "803fdd9b8517490d89d8c85ade466b8d"
+const apiKey = process.env.REACT_APP_API_KEY_NEWS
 
 export default function useArticlesQuery({ country, query, date, sort }) {
   const startDate = date.startDate && date.startDate.format("YYYY-MM-DD")
@@ -12,7 +12,9 @@ export default function useArticlesQuery({ country, query, date, sort }) {
       }${endDate ? `&to=${endDate}` : ""}`
     : `https://newsapi.org/v2/top-headlines?country=${country}`
 
-  const [{ data, loading, error }] = useAxios(`${url}&apiKey=${apiKey}&sortBy=${sort}`)
+  const [{ data, loading, error }] = useAxios(
+    `${url}&apiKey=${apiKey}&sortBy=${sort}`
+  )
 
   return { data, loading, error }
 }

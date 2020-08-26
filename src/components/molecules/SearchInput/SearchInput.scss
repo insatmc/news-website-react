@@ -1,0 +1,31 @@
+.searchInput{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%
+    }
+
+    button {
+        position: absolute;
+        right: 8px;
+        top: 12px;
+        background: transparent;
+        border: none;
+        opacity: 0.6;
+        cursor: pointer;
+
+        svg {
+            color: hsl(0,0%,80%);
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.articlePreview {
+    display: flex;
+    flex-direction: column;
+
+    .articleInfos {
+        margin-top: 10px;
+    }
+    
+    .articleDesc {
+        margin-top: 10px;
+    }
+}

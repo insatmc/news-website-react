@@ -1,0 +1,14 @@
+.button {
+    border: none;
+    background: none;
+    color: #0984e3;
+    font-style: bold;
+    display: flex;
+    align-items: center;
+
+    svg {
+        color: #0984e3;
+        fill: #0984e3;
+        margin-right: 4px;
+    }
+}

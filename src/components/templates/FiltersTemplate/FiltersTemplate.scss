@@ -1,0 +1,54 @@
+.filters {
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+    grid-template-areas: 
+        "a b"
+        "c c";
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        grid-template-areas: 
+        "a a"
+        "b b"
+        "c c";
+        row-gap: 20px;
+    }
+    
+    .trending-switcher {
+        grid-area: a;
+        
+    }
+
+    .query-search{
+        grid-area: b;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+
+    .more-filters{
+        grid-area: c;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        > div {
+            margin-right: 20px;
+        }
+        .filter-date {
+            width: 320px;
+            .DateRangePickerInput {
+                width: 320px;
+            }
+        }
+        .sort-by {
+            width: 200px;
+        }
+    }
+}

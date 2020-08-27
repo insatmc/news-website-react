@@ -17,7 +17,7 @@ export default function SearchInput({ onChange, value, onBtnClick }) {
         onChange={onChange}
         value={value}
       />
-      <button type="button" onClick={onBtnClick}>
+      <button data-testid="search-btn" type="button" onClick={onBtnClick}>
         <SearchIcon />
       </button>
     </div>

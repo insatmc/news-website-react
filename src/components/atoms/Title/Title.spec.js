@@ -1,7 +1,8 @@
 import React from "react"
 
-import Title from "./Title"
 import { render } from "@testing-library/react"
+
+import Title from "./Title"
 
 describe("Title", () => {
   it("should match snapshot", () => {

@@ -17,7 +17,12 @@ export default function ArticleImage({ image, title, onRemove }) {
 
   return (
     <div className="articleImage" style={{ backgroundImage: `url(${image})` }}>
-      <button type="button" className="remove-btn" onClick={handleRemove}>
+      <button
+        data-testid="button-remove"
+        type="button"
+        className="remove-btn"
+        onClick={handleRemove}
+      >
         {t("Archive")}
       </button>
       <Text size="l" color="#FFF" kind="bold">

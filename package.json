@@ -30,7 +30,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "npm test -- --coverage",
+    "coverage": "npm test -- --all --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
@@ -60,13 +60,15 @@
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.17",
     "@testing-library/react": "^9.5.0",
+    "@testing-library/react-hooks": "^3.4.1",
     "babel-loader": "^8.1.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.1.0",
-    "react-is": "^16.13.1"
+    "react-is": "^16.13.1",
+    "react-test-renderer": "^16.13.1"
   },
   "jest": {
     "collectCoverageFrom": [

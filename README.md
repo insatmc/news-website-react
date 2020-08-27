@@ -1,6 +1,6 @@
 Deployed url: <a href="http://news-workit.s3-website.eu-west-2.amazonaws.com/">http://news-workit.s3-website.eu-west-2.amazonaws.com/</a>
 
-The application has a CI that build the app and deployed to AWS (S3 + cloudfront)
+The application has a CI that build the app and deploy it to AWS (S3 + cloudfront)
 
 ## Getting started
 

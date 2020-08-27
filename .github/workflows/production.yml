@@ -19,6 +19,8 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x]
+    env:
+      REACT_APP_API_KEY_NEWS: ${{ secrets.REACT_APP_API_KEY_NEWS }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:

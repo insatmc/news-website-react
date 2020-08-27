@@ -18,6 +18,14 @@ Start with creating `.env` file, copy the .env.sample and rename it to .env and 
 
 `npm run test`
 
+### Test coverage
+
+`npm run coverage`
+
+### Run storybook
+
+`npm run storybook`
+
 ### Prod build
 
 `npm run build`
